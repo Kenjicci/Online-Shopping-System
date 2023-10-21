@@ -1,0 +1,20 @@
+class Product:
+    def __init__(self, id_number, product_name, quantity, price):
+        self.id_number = id_number
+        self.product_name = product_name
+        self.quantity = quantity
+        self.price = price
+
+id_number = int(input("Enter the product's ID number: "))
+product_name = input("Enter the product's name: ")
+quantity = int(input("Enter the product's quantity: "))
+price = float(input("Enter the product's price: "))
+
+
+seller_product = Product(id_number, product_name, quantity, price)
+
+print("Product attributes set by the seller:")
+print("ID Number:", seller_product.id_number)
+print("Product Name:", seller_product.product_name)
+print("Quantity:", seller_product.quantity)
+print("Price:", seller_product.price)
